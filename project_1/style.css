@@ -1,113 +1,175 @@
 * {
+    /* resetting the padding and margin */
+    padding: 0;
+    margin: 0;
+
+    /* Setting box-sizing */
     box-sizing: border-box;
 }
-header {
 
-    background-color: aquamarine;
-    color: red;
+body {
+    header {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: aquamarine;
+        position: r;
 
-    img {
-        width: 100px;
-        aspect-ratio: 1/1;
-        object-fit: cover;
-        border-radius: 50%;
 
+        div.logo {
+            height: 100%;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                /* border: 1px solid white; */
+                transform: scale(1);
+            }
+        }
     }
 
     nav {
-        display: inline;
-    }
+        height: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
 
-}
+        a {
+            color: white;
+            font-size: large;
+            text-decoration: none;
+            /* border: 1px solid white; */
+            padding: 6px;
+            margin: 4px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
 
-p {
-    font-weight: 600;
-}
+        }
 
-.green {
-    color: green;
-    background-color: lightblue;
-}
-
-#special {
-    font-size: large;
-}
-
-p.abc {
-    background-color: rgb(200, 20, 250);
-    color: white;
-    /* Dimension */
-    height: 100px;
-    width: 585px;
-    /* Font */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 900;
-    /* borders */
-    border: 2px solid red;
-    border-radius: 10px;
-}
-
-img {
-    width: 100px;
-
-}
-
-img {
-    width: 50px;
-
-}
-
-em {
-    color: violet;
-}
-
-main {
-    margin-top: 50px;
-
-    .box-container {
-        height: 250px;
-        width: 200px;
-        background-color: rgb(120, 156, 187);
-        border: 2px solid greenyellow;
-
-        .box {
-            margin: auto;
-            text-align: center;
-            height: 200px;
-            width: 200px;
-            padding: 5px;
-            background-color: rgb(145, 22, 22);
-            background: url(images/logo.jpeg);
-            background-blend-mode: lighten;
-            background-position: center;
-            border: 2px solid;
-            border-radius: 20px;
-
-            position: fixed;
-            top: 50%;
-            /* bottom: 0; */
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-            form {
-                input {
-                    text-align: center;
-                }
-            }
-
-            button {
-                border-radius: 20px;
-                margin-top: 10px;
-                padding: 5px;
-            }
+        a:hover {
+            color: black;
+            transform: scale(1.05);
+            transition-duration: 0.5s;
 
         }
     }
 
-    .random {
-        width: 200px;
-        aspect-ratio: 1/1;
-        background-color: rgb(175, 115, 115);
-        border: 1px solid;
+    main {
+        max-width: 1000px;
+        margin: auto;
+        justify-content: space-evenly;
+        margin-bottom: 0;
+
+        div.container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            div.card {
+                /* border: 2px solid; */
+                box-shadow: 1px 2px 5px 2px rgb(18, 234, 29);
+                border-radius: 15px;
+                height: 310px;
+                width: 150px;
+                margin-top: 20px;
+                overflow: hidden;
+                background-color: white;
+                transition-duration: 2s;
+
+                div.card_img {
+                    height: 50%;
+                    width: 100%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                div.card_text {
+                    height: 50%;
+                    text-align: center;
+
+                    h3 {
+                        height: 30px;
+                    }
+
+                    h5 {
+                        height: 20px;
+                    }
+
+                    p {
+                        height: 80px;
+                        padding: 4px;
+                    }
+
+                    button {
+                        height: 20px;
+                        width: 100px;
+                        padding: 2px;
+                        border-radius: 8px;
+                        border: 0px;
+                        color: white;
+                        font-weight: 600;
+                        background-color: rgb(16, 102, 231);
+                    }
+                }
+            }
+
+            div.card:hover {
+                background-color: rgb(255, 255, 255);
+                box-shadow: 1px 2px 5px 2px rgb(18, 234, 29);
+                transform: scale(1.05);
+                transition-duration: 0.5s;
+            }
+        }
+
+        #desc {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            div.logo {
+                img {
+                    height: 200px;
+                    aspect-ratio: 1/1;
+                }
+            }
+
+            article {
+                text-align: left;
+                padding-left: 5px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+                h4 {
+                    text-align: center;
+                }
+
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    footer {
+        position: fixed;
+        height: 25px;
+        width: 100%;
+        background-color: aquamarine;
+        color: white;
+        bottom: 0;
+        z-index: 5;
+
+        p {
+            text-align: center;
+        }
     }
 }
