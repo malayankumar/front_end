@@ -14,7 +14,7 @@ body {
         justify-content: space-between;
         align-items: center;
         background-color: aquamarine;
-        position: r;
+        /* position: fixed; */
 
 
         div.logo {
@@ -63,7 +63,7 @@ body {
         max-width: 1000px;
         margin: auto;
         justify-content: space-evenly;
-        margin-bottom: 0;
+        margin-bottom: 50px;
 
         div.container {
             display: flex;
@@ -154,6 +154,98 @@ body {
 
                 h2 {
                     text-align: center;
+                }
+            }
+        }
+
+        #locations {
+            .grid_container {
+                margin-top: 10px;
+                display: grid;
+                grid-template-columns: auto auto;
+
+                .grid_item {
+                    width: 300px;
+                    margin-top: 10px;
+                    padding-top: 5px;
+                    box-shadow: 1px 1px 2px;
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    .card_img {
+                        height: 100px;
+                        width: 50%;
+                        overflow: hidden;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .card_body {
+                        width: 50%;
+                        padding-left: 5px;
+
+                        ul {
+                            height: 100%;
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            li {
+                                strong {
+                                    color: blue;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        div.box-container {
+            /* height: 250px;
+            width: 200px;
+            background-color: rgb(120, 156, 187);
+            border: 2px solid greenyellow; */
+
+            div.box {
+                margin: auto;
+                text-align: center;
+                height: 220px;
+                width: 220px;
+                padding: 15px;
+                background-color: rgb(145, 22, 22);
+                background: url(images/logo/logo.jpeg);
+                background-blend-mode:li;
+                background-position: center;
+                border: 2px solid;
+                border-radius: 20px;
+
+                position: fixed;
+                top: 50%;
+                /* bottom: 0; */
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                form {
+                    height: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 5px;
+                    justify-content: center;
+                    align-items: center;
+
+                    input,button {
+                        text-align: center;
+                        border-radius: 15px;
+                        margin-top: 10px;
+                        padding: 5px;
+                    }
                 }
             }
         }

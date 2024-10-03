@@ -65,10 +65,10 @@ main {
     margin-top: 50px;
 
     .box-container {
-        height: 250px;
+        /* height: 250px;
         width: 200px;
         background-color: rgb(120, 156, 187);
-        border: 2px solid greenyellow;
+        border: 2px solid greenyellow; */
 
         .box {
             margin: auto;
