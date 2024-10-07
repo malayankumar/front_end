@@ -161,8 +161,9 @@ body {
         #locations {
             .grid_container {
                 margin-top: 10px;
-                display: grid;
-                grid-template-columns: auto auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
 
                 .grid_item {
                     width: 300px;
