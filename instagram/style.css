@@ -150,8 +150,24 @@ body {
                 }
             }
         }
+        #reel_cart{
+            background-color: black;
+            div.reel_cart_section{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                video{
+                    margin-top: 5px;
+                    height: 158px;
+                    width: 158px;
+                    object-fit: cover;
+                    color: white;
+                }
+            }
+        }
     }
     footer {
+        bottom: 0;
         height: 25px;
         width: 100%;
         background-color: black;
