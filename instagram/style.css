@@ -10,9 +10,10 @@
 body {
     max-width: 480px;
     margin: auto;
+
     header {
         color: azure;
-        padding-left: 3px;
+        padding-left: 10px;
         width: 100%;
         top: 0;
         z-index: 5;
@@ -28,11 +29,11 @@ body {
             align-items: center;
             justify-content: center;
 
-            a {
+            i {
                 color: white;
                 font-size: larger;
                 text-decoration: none;
-                padding: 5px;
+                padding: 10px;
                 margin: 4px;
                 height: 100%;
                 display: flex;
@@ -41,7 +42,7 @@ body {
                 transition-duration: 1s;
             }
 
-            a:hover {
+            i:hover {
                 color: rgb(85, 158, 222);
                 background-color: white;
             }
@@ -73,7 +74,7 @@ body {
                         img {
                             height: 70px;
                             width: 70px;
-                            object-fit:cover;
+                            object-fit: cover;
                         }
                     }
 
@@ -108,21 +109,24 @@ body {
             div.bio-section {
                 background-color: black;
                 color: white;
+
                 h4 {
                     margin-left: 3px;
                 }
 
                 p {
                     margin-top: 3px;
-                    margin-left: 2px;
+                    margin-left: 3px;
                 }
 
             }
+
             .profile-buttons {
                 width: 100%;
                 display: flex;
                 justify-content: space-evenly;
                 background-color: black;
+
                 button {
                     width: 155px;
                     margin-top: 10px;
@@ -131,17 +135,94 @@ body {
                     background-color: rgb(35, 34, 34);
                     border-radius: 10px;
                     border: 1px solid white;
-                    
+
                 }
             }
         }
-        #photo_cart{
+
+        #highlighter {
             background-color: black;
-            div.photo_cart_section{
+            display: flex;
+
+            .outer_circle {
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                margin-left: 10px;
+                border: 1px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .inner_circle {
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 1px;
+                    
+                    
+
+                    img {
+                        height: 70px;
+                        width: 70px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 1px;
+
+                    }
+                    p{
+                        color: white;
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+        #nav_section{
+            background-color: black;
+            nav{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-left: 60px;
+                margin-right: 60px;
+    
+                a {
+                    color: white;
+                    font-size: larger;
+                    text-decoration: none;
+                    padding: 5px;
+                    margin: 4px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition-duration: 1s;
+                }
+    
+                a:hover {
+                    color: rgb(85, 158, 222);
+                    background-color: white;
+                }
+            }
+
+        }
+
+        #photo_cart {
+            background-color: black;
+
+            div.photo_cart_section {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                img{
+
+                img {
                     margin-top: 5px;
                     height: 158px;
                     width: 158px;
@@ -150,13 +231,16 @@ body {
                 }
             }
         }
-        #reel_cart{
+
+        #reel_cart {
             background-color: black;
-            div.reel_cart_section{
+
+            div.reel_cart_section {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                video{
+
+                video {
                     margin-top: 5px;
                     height: 158px;
                     width: 158px;
@@ -166,16 +250,20 @@ body {
             }
         }
     }
+
     footer {
-        bottom: 0;
-        height: 25px;
-        width: 100%;
+        position: fixed;
+        height: 38px;
+        width: 480px;
         background-color: black;
         color: white;
         bottom: 0;
         z-index: 5;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
 
-        p {
+        i {
             text-align: center;
         }
     }
